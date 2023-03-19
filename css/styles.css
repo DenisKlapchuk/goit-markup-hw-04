@@ -432,7 +432,7 @@ img {
     justify-content: center;
     gap: 16px;
 }
-.social-media{
+.footer-container{
     display: flex;
 }
 .footer-soc-item {
