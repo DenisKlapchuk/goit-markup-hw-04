@@ -5,6 +5,7 @@
     --primary-color: #4D5AE5;
     --background-color: #ffffff;
     --secondary-color: #F5F4FA;
+    --transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -222,6 +223,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
     background-color: #F4F4FD;
 }
 
@@ -284,10 +286,6 @@ img {
     background-color: #FFFFFF;
 }   
 
-.team-soc-icon{
-    color: #FFFFFF;
-    
-}
 
 .team-soc-list{
     display: flex;
@@ -297,6 +295,7 @@ img {
 .team-soc-item {
     width: 40px;
     height: 40px;
+    margin-top: 8px;
 }
 .team-soc-link {
     width: 40px;
@@ -338,7 +337,56 @@ img {
     padding-bottom: 32px;
 }
 
-/**--footer-- */
+/**--customers-- */
+.section-customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color:#2E2F42;
+    margin-bottom: 72px;
+}
+
+.customers-icon {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    fill: #8E8F99;
+}
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.customers-item {
+    width: calc((100% - 120px) / 6);
+    height: 80px;
+    justify-content: center;
+    
+}
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-width: 168px;
+    min-height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.customers-link:hover .customers-icon {
+    fill: #404BBF;
+}
+.customers-link:hover{
+    border: 1px solid #404BBF;
+}
+/**--footer--**/
 .footer {
     color: var(--background-color);  
     background-color: #2F303A;
@@ -371,6 +419,40 @@ img {
     color:  #E7E9FC;
     max-width: 264px;
     margin-top: 16px;
+}
+.footer-media {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.footer-soc-list{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.footer-soc-item {
+    width: 40px;
+    height: 40px;
+    gap: 16px;
+}
+.footer-soc-link {
+    width: 40px;
+    height: 40px;
+    background-color: #434455;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.footer-soc-link:hover {
+    color: var(--secondary-color);
+    background-color:#31D0AA;
+}
+.footer-soc-link:focus{
+    color: var(--secondary-color);
+    background-color:#31D0AA;
 }
 
 /**--section-portfolio*/
